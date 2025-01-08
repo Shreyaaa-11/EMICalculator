@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home Loan EMI Calculator"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="80dp"
+            android:gravity="center"
+            android:textColor="#000000" />
+
+        <!-- Principal Amount -->
+        <EditText
+            android:id="@+id/etPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Principal Amount"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:backgroundTint="#00796B"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Loan Tenure -->
+        <EditText
+            android:id="@+id/etTenure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Loan Tenure (in months)"
+            android:inputType="number"
+            android:padding="10dp"
+            android:backgroundTint="#00796B"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Annual Interest Rate -->
+        <EditText
+            android:id="@+id/etInterestRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Annual Interest Rate (%)"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:backgroundTint="#00796B"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Calculate EMI Button -->
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate EMI"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#00796B"
+            android:layout_marginTop="16dp" />
+
+        <!-- Result TextView -->
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EMI will be displayed here"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_marginTop="16dp"
+            android:textColor="#000000"
+            android:gravity="center" />
+    </LinearLayout>
+</ScrollView>
